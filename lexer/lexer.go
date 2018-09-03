@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"github.com/vergult/monkey/token"
+	"gitlab.com/vergult/monkey/token"
 )
 
 type Lexer struct {

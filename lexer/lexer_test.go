@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/vergult/monkey/token"
+	"gitlab.com/vergult/monkey/token"
 )
 
 func TestNextToken(t *testing.T) {

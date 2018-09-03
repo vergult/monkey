@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"github.com/vergult/monkey/ast"
-	"github.com/vergult/monkey/lexer"
-	"github.com/vergult/monkey/token"
+	"gitlab.com/vergult/monkey/ast"
+	"gitlab.com/vergult/monkey/lexer"
+	"gitlab.com/vergult/monkey/token"
 )
 
 type Parser struct {

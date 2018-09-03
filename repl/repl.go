@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/vergult/monkey/lexer"
-	"github.com/vergult/monkey/token"
+	"gitlab.com/vergult/monkey/lexer"
+	"gitlab.com/vergult/monkey/token"
 )
 
 const PROMPT = ">> "

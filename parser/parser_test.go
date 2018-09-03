@@ -3,8 +3,8 @@ package parser
 import (
 	"testing"
 
-	"github.com/vergult/monkey/ast"
-	"github.com/vergult/monkey/lexer"
+	"gitlab.com/vergult/monkey/ast"
+	"gitlab.com/vergult/monkey/lexer"
 )
 
 func TestLetStatements(t *testing.T) {

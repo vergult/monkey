@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/vergult/monkey/token"
+	"gitlab.com/vergult/monkey/token"
 )
 
 type Node interface {

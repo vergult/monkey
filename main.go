@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/vergult/monkey/repl"
+	"gitlab.com/vergult/monkey/repl"
 )
 
 func main() {
