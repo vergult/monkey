@@ -7,6 +7,7 @@ import (
 
 	"gitlab.com/vergult/monkey/evaluator"
 	"gitlab.com/vergult/monkey/lexer"
+	"gitlab.com/vergult/monkey/object"
 	"gitlab.com/vergult/monkey/parser"
 )
 
