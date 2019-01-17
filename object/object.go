@@ -124,7 +124,7 @@ func (s *String) Inspect() string {
 	return s.Value
 }
 
-type BuiltinFunction func(args ...object.Object) object.Object
+type BuiltinFunction func(args ...Object) Object
 
 type Builtin struct {
 	Fn BuiltinFunction
