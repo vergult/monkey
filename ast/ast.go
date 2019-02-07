@@ -369,7 +369,7 @@ func (ie *IndexExpression) String() string {
 }
 
 type HashLiteral struct {
-	Token token.Type // the '{' token
+	Token token.Token // the '{' token
 	Pairs map[Expression]Expression
 }
 
