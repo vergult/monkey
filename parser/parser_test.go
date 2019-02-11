@@ -837,14 +837,15 @@ func TestParsingHashLiteralsStringKeys(t *testing.T) {
 		"three": 3,
 	}
 
-	for k, v := range hash.Pairs {
-		literal, ok := k.(*ast.StringLiteral)
+	for key, value := range hash.Pairs {
+		literal, ok := key.(*ast.StringLiteral)
 		if !ok {
-			t.Errorf("key is not ast.StringLiteral. got=%T", k)
+			t.Errorf("key is not ast.StringLiteral. got=%T", key)
 		}
 
 		expectedValue := expected[literal.String()]
-		testIntegerLiteral(t, v, expectedValue)
+
+		testIntegerLiteral(t, value, expectedValue)
 	}
 }
 
@@ -897,16 +898,19 @@ func TestParsingHashLiteralsWithExpressions(t *testing.T) {
 		},
 	}
 
-	for k, v := range hash.Pairs {
-		literal, ok := k.(*ast.StringLiteral)
+	for key, value := range hash.Pairs {
+		literal, ok := key.(*ast.StringLiteral)
 		if !ok {
-			t.Errorf("key is not ast.StringLiteral. got=%T", k)
+			t.Errorf("key is not ast.StringLiteral. got=%T", key)
 			continue
 		}
+
 		testFunc, ok := tests[literal.String()]
 		if !ok {
 			t.Errorf("No test function for key %q found", literal.String())
+			continue
 		}
-		testFunc(v)
+
+		testFunc(value)
 	}
 }
